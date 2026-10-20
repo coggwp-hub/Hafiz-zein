@@ -1,0 +1,51 @@
+def registrasi_ktp():
+    print("=" * 45)
+    print("       PROGRAM REGISTRASI DATA KTP       ")
+    print("=" * 45)
+    print("Silakan isi data diri Anda di bawah ini:\n")
+    
+    # Input Data Penduduk (Nilai default atau isian langsung)
+    nik = input("Masukkan NIK [1272020111060002] : ") or "1272020111060002"
+    nama = input("Nama Lengkap [HAFIZ PUTRA ZEIN] : ") or "HAFIZ PUTRA ZEIN"
+    tempat_lahir = input("Tempat Lahir [PEMATANG SIANTAR] : ") or "PEMATANG SIANTAR"
+    tanggal_lahir = input("Tanggal Lahir [01-11-2006]      : ") or "01-11-2006"
+    
+    print("\nPilih Jenis Kelamin:")
+    print("1. Laki-laki")
+    print("2. Perempuan")
+    pilih_jk = input("Masukkan pilihan (1/2) [default 1]: ") or "1"
+    jenis_kelamin = "Laki-laki" if pilih_jk == "1" else "Perempuan"
+    
+    alamat = input("\nAlamat [ASRAMA KODIM 0210/TU]     : ") or "ASRAMA KODIM 0210/TU"
+    rt_rw = input("RT/RW [000/000]                   : ") or "000/000"
+    kel_desa = input("Kelurahan/Desa [HUTATORUAN X]     : ") or "HUTATORUAN X"
+    kecamatan = input("Kecamatan [TARUTUNG]              : ") or "TARUTUNG"
+    agama = input("Agama [ISLAM]                     : ") or "ISLAM"
+    status = input("Status Perkawinan [BELUM KAWIN]   : ") or "BELUM KAWIN"
+    pekerjaan = input("Pekerjaan [PELAJAR/MAHASISWA]     : ") or "PELAJAR/MAHASISWA"
+    kewarganegaraan = input("Kewarganegaraan [WNI]             : ") or "WNI"
+    
+    # Menampilkan Hasil Output Simulasi KTP
+    print("\n\n" + "=" * 50)
+    print("               PROVINSI SUMATERA UTARA             ")
+    print("              KABUPATEN TAPANULI UTARA             ")
+    print("=" * 50)
+    print(f"NIK               : {nik}")
+    print(f"Nama              : {nama.upper()}")
+    print(f"Tempat/Tgl Lahir  : {tempat_lahir}, {tanggal_lahir}")
+    print(f"Jenis Kelamin     : {jenis_kelamin:<15} Gol. Darah : A")
+    print(f"Alamat            : {alamat}")
+    print(f"  RT/RW           : {rt_rw}")
+    print(f"  Kel/Desa        : {kel_desa}")
+    print(f"  Kecamatan       : {kecamatan}")
+    print(f"Agama             : {agama}")
+    print(f"Status Perkawinan : {status}")
+    print(f"Pekerjaan         : {pekerjaan}")
+    print(f"Kewarganegaraan   : {kewarganegaraan}")
+    print("=" * 50)
+    print("       [STATUS: DATA KTP BERHASIL DIREGISTRASI]      ")
+    print("=" * 50)
+
+if __name__ == "__main__":
+    registrasi_ktp()
+    
